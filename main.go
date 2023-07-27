@@ -25,7 +25,7 @@ import (
 func main() {
 	var serverAddr = flag.String("s", stun.DefaultServerAddr, "STUN server address")
 	var behaviorTestMode = flag.Bool("b", false, "Enable NAT behavior test mode")
-	var verboseLevel = flag.Int("v", 0, "Verbose level (0: none, 1: verbose, 2: double verbose, 3: triple verbose)")
+	var verboseLevel = flag.Int("v", 3, "Verbose level (0: none, 1: verbose, 2: double verbose, 3: triple verbose)")
 	flag.Parse()
 
 	// Validate verbose level
